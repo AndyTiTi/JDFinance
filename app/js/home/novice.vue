@@ -49,6 +49,7 @@
                 &:first-child{
                     padding: 32px 20px;
                     text-align: center;
+                    border-right: 1px solid #ddd;
                     img{
                         width: 132px;
                         height: 132px;
@@ -77,6 +78,9 @@
                         wdith:100%;
                         padding: 32px 28px;
                         box-sizing: border-box;
+                        &:first-child{
+                            border-bottom: 1px solid #ddd;
+                        }
                         h4{
                             white-space: nowrap;
                             text-overflow: ellipsis;
