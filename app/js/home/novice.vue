@@ -37,7 +37,6 @@
     @import "../../css/element";
     .panel{
         @include panel;
-        margin: 20px 0;
         >h4{
             border-bottom: 1px solid #ddd;
         }
