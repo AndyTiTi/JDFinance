@@ -1,6 +1,7 @@
 <template lang="html">
     <Panel title="新品推荐" :class="$style.panel">
         <section :class="$style.content">
+            <div class="arrow">更多尖货></div>
             <Slider :options="options" :items="items" cname="product-slider"/>
         </section>
     </Panel>
@@ -19,19 +20,22 @@
             return {
                 items: [{
                     href: "home",
-                    src: "//img12.360buyimg.com/jrpmobile/jfs/t20368/53/1699227456/59616/e6a80ca4/5b30a580N130c8dfc.jpg?width=335&height=421"
+                    src: "//img12.360buyimg.com/jrpmobile/jfs/t13963/267/2355123229/48850/254f797a/5a3c59aeN9cb550f6.jpg?width=335&height=421",
                 }, {
-                    href: "home1",
-                    src: "//img12.360buyimg.com/jrpmobile/jfs/t23338/182/473320295/44592/4835b8d8/5b30a593N32e80321.jpg?width=335&height=421"
+                    href: "home",
+                    src: "//img12.360buyimg.com/jrpmobile/jfs/t13021/306/1996997425/21953/bda69db3/5a2f6a17N9da099b1.jpg?width=335&height=421",
                 }, {
-                    href: "home2",
-                    src: "//img12.360buyimg.com/jrpmobile/jfs/t23323/199/462493049/28263/3d0f7cbf/5b30a5a5N3dec8fdc.jpg?width=335&height=421"
+                    href: "home",
+                    src: "//img12.360buyimg.com/jrpmobile/jfs/t14125/310/1997192193/46667/3c910f8b/5a2f6a36Nad95b650.jpg?width=335&height=421",
+                }, {
+                    href: "home",
+                    src: "//img12.360buyimg.com/jrpmobile/jfs/t15784/188/381232069/39444/8878571d/5a2f6a4aNbd5a574c.jpg?width=335&height=421",
                 }],
                 options: {
-                    slidesPerview: 2.3,
+                    slidesPerView: 2.3,
                     spaceBetween: 30,
-                    freeMode: true
-                }
+                    freeMode: true,
+                },
             }
         }
     }
@@ -63,7 +67,15 @@
     .panel {
         @include panel;
         .content{
+            position: relative;
             padding-bottom: 40px;
+            &>div{
+                position: absolute;
+                font-size: 28px;
+                color:#999;
+                right: 20px;
+                top: -70px;
+            }
         }
     }
 </style>
