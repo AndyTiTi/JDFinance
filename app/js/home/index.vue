@@ -7,11 +7,15 @@
         <Money/>
         <Product/>
         <Life/>
+        <Footer/>
+        <Navbar/>
     </div>
 </template>
 
 <script>
     import Heador from '../public/header'
+    import Footer from '../public/footer'
+    import Navbar from '../public/navbar'
     import Slider from './hslider'
     import Novice from './novice'
     import Borrow from './borrow'
@@ -26,7 +30,9 @@ export default {
             Borrow,
             Money,
             Product,
-            Life
+            Life,
+            Footer,
+            Navbar
         }
 }
 </script>
