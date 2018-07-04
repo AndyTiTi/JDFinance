@@ -35,12 +35,12 @@
     @import "../../css/element";
     .panel{
         @include panel;
+        margin-top: 100px;
         >h4{
             display: none;
         }
         .content{
             .slider{
-                margin-top: 100px;
                 img{
                     width:100%;
                 }

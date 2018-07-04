@@ -14,7 +14,7 @@
                 </router-link>
             </li>
             <li>
-                <router-link :to="{name:'home'}">
+                <router-link :to="{name:'ious'}">
                     <img src="//img12.360buyimg.com/jrpmobile/jfs/t11653/76/201131398/1192/bf1b2852/59e9d7f3N5f691137.png?width=60&height=60" alt="">
                     <p>借钱</p>
                 </router-link>
