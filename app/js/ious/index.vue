@@ -22,6 +22,7 @@
             Slider,
             Footer,
             Navbar,
+            Welfare,
             Service
         }
     }
