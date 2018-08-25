@@ -1,7 +1,7 @@
 <template lang="html">
     <section :class="cname">
         <swiper :options="options" :not-next-ticl="options.notNextTick">
-            <swiper-slide v-for="item in items" :key="item.href">
+            <swiper-slide v-for="item in items" :key="item.href" :class="$style.slider">
                 <router-link :to="{name:item.href}">
                     <img :src="item.src" alt="">
                 </router-link>
@@ -48,4 +48,11 @@
 
 <style lang="css">
     @import "~swiper/dist/css/swiper.css";
+</style>
+<style lang="scss" module>
+    .slider{
+		img{
+			width:100%;
+		}
+	}
 </style>
